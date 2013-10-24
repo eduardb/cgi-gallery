@@ -1,0 +1,13 @@
+<html>
+<body>
+<!-- Un formular impreuna cu un script CGI va permite upload-ul pe server a unei imagini intr-un anumit director. Dupa upload, utilizatorului i se va oferi posibilitatea sa vizualizeze o galerie a tuturor imaginilor din directorul de upload impreuna cu un link sau un buton de delete in dreptul fiecarei imagini care va permite prin intermediul unui alt cgi stergerea imaginii respective. Se vor efectua toate validarile necesare: fisierul care se incarca are extensia corespunzatoare, numele fisierului care trebuie sters nu contine caractere ilegale - spre exemplu nu se cere stergerea fisierului ../../../../../../../../../var/spool/mail/username. -->
+
+<form action="cgi-bin/upload.cgi" method="post" enctype="multipart/form-data">
+	<input type="file" name="fisier" accept="image" /> <br />    
+    <input type="submit" />
+</form>
+
+<a href=".">Go back</a>
+
+</body>
+</html>
